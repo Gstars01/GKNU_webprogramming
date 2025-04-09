@@ -1,0 +1,100 @@
+<!-- form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <!-- ㅡ<form[속성  = "속성값"]> 여러 폼 요소 </form>-->
+     <form action="" method="get">
+        <fieldset>
+            <legend> user infomation </legend>
+            <label for="userId">
+                id (6자 이상)</label>
+            <input type="text" id="userId" autofocus value="input id here" readonly><br><br>
+            <label for="userPW" >
+                password (8자 이상)</label>
+            <input type="password" id="userPW"><br><br> <!--if type == password -> output *-->
+            <!--교재 132page 참고 -->
+            <input type="file">
+            <input type="submit" value="Login">
+            <input type="reset" value="reset all"><br><br>
+            <input type="button" value="open notice board" onclick="window.open('day250403_ex01.html','_blank',width=300,height=400)">
+        </fieldset>
+
+        <fieldset>
+            <legend>배송정보</legend>
+            주소 :&emsp;&emsp;&emsp;&ensp; <input type="address"><br>
+            이메일 주소 :&ensp;<input type="email"><br>
+            전화번호 :&emsp;&ensp; <input type="phone"><br>
+        </fieldset>
+        <h3>주문할 상품을 선택해주세요.(중복선택 가능)</h3>
+        <fieldset>
+            <legend>상품 선택</legend>
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="5">개
+                    선물용 1Kg
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="5">개
+                    선물용 3Kg
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="5">개
+                    선물용 5Kg
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="5">개
+                    선물용 10Kg
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>포장 여부</legend>
+            <ul>
+                <li><input type="radio" name="gift" value="yes">선물 포장</li>
+                <li><input type="radio" name="gift" value="no">선물 포장 안함</li>
+            </ul>
+        </fieldset>
+    <input type="range" min="0" max="01099999999" step="1">
+    <fieldset>
+        <legend>set time</legend>
+        <h3>날짜입력하기</h3>
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <h3>time</h3>
+
+        <input type="time">
+        <input type="datetime-local">
+
+        <h3>기간을 정하기</h3>
+        <input type="date" min="2025-03-01" max="25-04-03">
+    </fieldset>
+    <fieldset>
+        <legend>하고싶은말</legend>
+        <textarea name="" id="" cols="60" rows="10">
+
+        </textarea>
+    </fieldset>
+    <fieldset>
+        <legend>favorit food</legend>
+        <select name="" id="">
+            <option value="v1">짜장면</option>
+            <option value="v2">돈까스</option>
+            <option value="v3">초밥</option>
+            <option value="v4">떡볶이</option>
+        </select>
+    </fieldset>
+    </form>
+     <!--fieldset  : 폼요소를 그룹으로 묶는 태그[]-->
+</body>
+</html>
