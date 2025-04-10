@@ -1,0 +1,5 @@
+h2{ /*h2속성에게만 적용*/
+    padding: 10px;  
+    background-color: #222;
+    color: #fff;
+  }
